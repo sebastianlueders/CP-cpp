@@ -1,0 +1,38 @@
+Imports:
+
+#include <bits/stdc++.h>  // for extensive C++ Libraries import (GNU C++ Compiler)
+
+
+Aliases:
+
+typedef long long ll;  // Signed or Unsigned long covers (-2^63 to 2^63 - 1) or (0 to 2^64 - 1) 
+typedef pair<int, int> ii;  // Pair of integers alias
+typedef vector<int> vi;  // 1d vector of ints alias
+typedef vector<ii> vii;  // 2d vector of ints
+memset(memo, -1, sizeof memo);  // Used to initialize the memory for memo to 0xFF for every byte 
+// (commonly used to mark values as unset/uncomputed in DP)
+ 
+vi memo(n, -1);  // Concise way to create a vector of integers with a specified size n with preset values of -1
+memset(arr, 0, sizeof arr);  // Initializes all values of array arr to 0
+
+Constants:
+
+const int INF = 1e9; // Represents the value of infinity/unreachable state for an integer
+const int LLINF = 4e18;  // Represents the value of infinity/unreachable state for a long long (ll) data type
+const double EPS = 1e-9;  // Used to compare float data types for equality i.e. fabs(a-1) < EPS ? equal : unequal
+
+/*
+Common Lines:
+
+index = (index + 1) % n; => Move right or back to zero for representing 1d vectors as 2d matrices
+
+index = (index + n - 1) % n; => Similar to above but wraps correctly when traversing leftwards
+
+int ans = (int) ((double) d + 0.5); => For fool-proof rounding
+
+if (true) printf("True"); => For one-statement conditionals
+
+pair<int, string> p = {42, "Set Hut"};
+auto [num, text] = p;  // For Structured Bindings (see official docs for more info)
+
+*/
