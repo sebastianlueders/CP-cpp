@@ -1,0 +1,3 @@
+[submodule "external/cpbook-code"]
+	path = external/cpbook-code
+	url = https://github.com/sebastianlueders/cpbook-code.git
